@@ -1,0 +1,12 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd backend && npm run dev",
+    "client": "cd reactapp && npm run dev"
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.1"
+  }
+}
